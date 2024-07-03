@@ -1,0 +1,44 @@
+[project]
+name = "django-admin-search-fields"
+description = "django-admin-search-fields allows users to dynamically selecting search fields on list page"
+license = {file = "LICENSE"}
+version = "0.1.0"
+readme = "README.md"
+authors = [{name = "Ishak Okutan", email = "ishak.oktn@gmail.com"}]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "django>=3.2",
+]
+
+[project.urls]
+Documentation = "https://github.com/ishakoktn/django-admin-search-fields/blob/master/README.md"
+Homepage = "https://github.com/ishakoktn/django-admin-search-fields"
+Repository = "https://github.com/ishakoktn/django-admin-search-fields"
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "django_admin_search_fields",
+]
