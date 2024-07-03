@@ -16,15 +16,20 @@ Key Benefits
 How To Use
 -----------
 
-1. Add `django-admin-search-fields` to  `INSTALLED_APPS` in your `settings.py`:
+1. Install package with `pip install django-admin-search-fields`.
+
+
+2. Add `django_admin_search_fields` to  `INSTALLED_APPS` in your `settings.py`. `django_admin_search_fields` should placed before the used apps:
 ```
     INSTALLED_APPS = [
         ...,
-        "django-admin-search-fields",
+        "django_admin_search_fields",
+        ...
+        "your_app"
     ]
 ```
 
-2. Import and inherit `DjangoAdminSearchFieldModelAdmin` to your custom model admin class and set `search_field_choices` like below:
+3. Import and inherit `DjangoAdminSearchFieldModelAdmin` to your custom model admin class and set `search_field_choices` like below:
 
 ``` 
     from django_admin_search_fields.admin import DjangoAdminSearchFieldModelAdmin
