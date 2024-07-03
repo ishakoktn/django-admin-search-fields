@@ -1,0 +1,173 @@
+[
+    {
+        "model": "app.author",
+        "pk": 1,
+        "fields": {
+            "full_name": "John Doe"
+        }
+    },
+    {
+        "model": "app.author",
+        "pk": 2,
+        "fields": {
+            "full_name": "Janet Dias"
+        }
+    },
+    {
+        "model": "app.author",
+        "pk": 3,
+        "fields": {
+            "full_name": "Martin K. Simson"
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 1,
+        "fields": {
+            "title": "Journey to the Depths of the Ocean",
+            "subtitle": "Discovering the Unknown Beneath the Waves",
+            "content": "The ocean holds countless mysteries, from vibrant coral reefs to the darkest trenches. Explorers have long been captivated by the allure of the deep sea, unearthing new species and ecosystems that challenge our understanding of life on Earth.",
+            "author": 1
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 2,
+        "fields": {
+            "title": "The Wonders of Ancient Civilizations",
+            "subtitle": "Unearthing the Secrets of Lost Empires",
+            "content": "From the pyramids of Egypt to the ruins of Machu Picchu, ancient civilizations have left behind monumental legacies. These historical treasures offer a glimpse into the past, revealing the ingenuity and culture of societies that thrived long ago.",
+            "author": 2
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 3,
+        "fields": {
+            "title": "Exploring the Vastness of Space",
+            "subtitle": "Venturing Beyond Our Celestial Neighborhood",
+            "content": "Space exploration has always been at the forefront of human curiosity. With advances in technology, we are now able to send probes and telescopes farther than ever, uncovering the wonders of our galaxy and beyond.",
+            "author": 3
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 4,
+        "fields": {
+            "title": "The Marvels of Modern Architecture",
+            "subtitle": "Innovative Designs Shaping Our Cities",
+            "content": "Modern architecture blends functionality with aesthetic appeal, creating structures that redefine urban landscapes. From skyscrapers to sustainable buildings, today's architects are pushing the boundaries of design and technology.",
+            "author": 1
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 5,
+        "fields": {
+            "title": "The Enigma of Quantum Mechanics",
+            "subtitle": "Understanding the Unseen World of Particles",
+            "content": "Quantum mechanics delves into the behavior of particles at the smallest scales. This branch of physics challenges our conventional views, revealing a universe where particles can exist in multiple states and positions simultaneously.",
+            "author": 2
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 6,
+        "fields": {
+            "title": "The Evolution of Technology",
+            "subtitle": "From Early Inventions to Cutting-Edge Innovations",
+            "content": "Technology has rapidly evolved, transforming how we live, work, and communicate. From the invention of the wheel to the digital revolution, each breakthrough has paved the way for a more connected and efficient world.",
+            "author": 3
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 7,
+        "fields": {
+            "title": "The Art of Culinary Excellence",
+            "subtitle": "Mastering the Craft of Fine Dining",
+            "content": "Culinary arts blend creativity with precision, crafting dishes that delight the senses. From traditional recipes to modern fusion cuisine, chefs around the world strive to create memorable dining experiences that transcend taste.",
+            "author": 1
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 8,
+        "fields": {
+            "title": "The Dynamics of Global Economies",
+            "subtitle": "Navigating the Complexities of International Trade",
+            "content": "Global economies are interconnected systems influenced by policies, market trends, and geopolitical events. Understanding these dynamics is crucial for navigating the challenges and opportunities in today's international business environment.",
+            "author": 2
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 9,
+        "fields": {
+            "title": "The Pursuit of Scientific Knowledge",
+            "subtitle": "Advancing Our Understanding Through Research",
+            "content": "Science drives our quest for knowledge, from unraveling the mysteries of the natural world to developing new technologies. Researchers across disciplines strive to expand our understanding and address the challenges facing humanity.",
+            "author": 3
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 10,
+        "fields": {
+            "title": "The Impact of Climate Change",
+            "subtitle": "Adapting to a Rapidly Changing Environment",
+            "content": "Climate change is one of the most pressing issues of our time, affecting ecosystems, weather patterns, and human societies. Understanding its impact is crucial for developing strategies to mitigate and adapt to these changes.",
+            "author": 1
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 11,
+        "fields": {
+            "title": "The Intricacies of Human Psychology",
+            "subtitle": "Exploring the Depths of the Mind",
+            "content": "Human psychology delves into the complexities of mental processes and behavior. By studying cognitive functions, emotions, and social interactions, we gain insights into what drives our actions and how we perceive the world.",
+            "author": 2
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 12,
+        "fields": {
+            "title": "The Evolution of Artistic Expression",
+            "subtitle": "Tracing the Journey from Cave Paintings to Digital Art",
+            "content": "Art has evolved through the ages, reflecting cultural shifts and technological advancements. From prehistoric cave paintings to contemporary digital creations, each era showcases unique styles and methods of artistic expression.",
+            "author": 3
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 13,
+        "fields": {
+            "title": "The Wonders of Wildlife Conservation",
+            "subtitle": "Protecting Endangered Species and Habitats",
+            "content": "Wildlife conservation efforts aim to preserve biodiversity and protect endangered species from extinction. These initiatives are crucial for maintaining the balance of ecosystems and ensuring the survival of our planet's diverse fauna and flora.",
+            "author": 1
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 14,
+        "fields": {
+            "title": "The Power of Renewable Energy",
+            "subtitle": "Harnessing Nature to Fuel the Future",
+            "content": "Renewable energy sources, such as solar, wind, and hydroelectric power, offer sustainable alternatives to fossil fuels. Embracing these technologies is essential for reducing carbon emissions and building a greener, more resilient energy infrastructure.",
+            "author": 2
+        }
+    },
+    {
+        "model": "app.post",
+        "pk": 15,
+        "fields": {
+            "title": "The Legacy of Great Explorers",
+            "subtitle": "Charting the Uncharted Territories",
+            "content": "Throughout history, great explorers have ventured into unknown lands and seas, expanding the boundaries of the known world. Their journeys have opened new paths for trade, cultural exchange, and scientific discovery.",
+            "author": 3
+        }
+    }
+]
