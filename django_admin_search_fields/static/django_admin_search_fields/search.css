@@ -1,0 +1,36 @@
+#search-fields {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width: 767px) {
+    #search-fields {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .search-wrapper {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-input #searchbar {
+        width: auto !important;
+    }
+
+    #changelist-search>div {
+        max-width: 100%;
+    }
+}
