@@ -10,13 +10,11 @@ class DjangoAdminSearchFieldsMixin:
         """
         Retrieves the list of currently selected search fields.
         """
-        if not self.search_field_choices:
+        if not self.search_field_choices or not self._selected_search_fields:
             return ()
 
-        # Create a set of valid field names for quick lookup
         valid_fields = {field_name for field_name, *_ in self.search_field_choices}
 
-        # Filter out any invalid fields
         if not all(field in valid_fields for field in self._selected_search_fields):
             return ()
 
