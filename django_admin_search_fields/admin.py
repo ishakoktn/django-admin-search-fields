@@ -1,10 +1,51 @@
 from django.contrib import admin
 
+from django.contrib.admin.views.main import ChangeList
 
 class DjangoAdminSearchFieldsMixin:
     change_list_template = "django_admin_search_fields/change_list.html"
     search_field_choices = ()
     _selected_search_fields = ()
+
+    #To test the issue https://github.com/ishakoktn/django-admin-search-fields/issues/1
+    list_per_page = 10
+
+    def get_changelist(self, request, **kwargs):
+        """
+        Returns the ChangeList class for use on the changelist page.
+        """
+        
+        
+        class CustomChangeList(ChangeList):
+            def get_query_string(self, new_params=None, remove=None):
+                """
+                Add search fields to query string if they exist
+                """
+                if new_params is None:
+                    new_params = {}
+                if remove is None:
+                    remove = []
+                
+                # Get the original query string
+                query_string = super().get_query_string(new_params, remove)
+                
+                # Add search fields if they exist
+                if self.model_admin._selected_search_fields:
+                    search_fields_params = '&'.join(
+                        f'search-fields={field}' 
+                        for field in self.model_admin._selected_search_fields
+                    )
+                    if query_string:
+                        if '?' in query_string:
+                            query_string = f'{query_string}&{search_fields_params}'
+                        else:
+                            query_string = f'?{search_fields_params}'
+                    else:
+                        query_string = f'?{search_fields_params}'
+                
+                return query_string
+                
+        return CustomChangeList
 
     def get_selected_search_fields(self):
         """
@@ -35,6 +76,8 @@ class DjangoAdminSearchFieldsMixin:
         self._selected_search_fields = self.search_fields
         self.search_fields = original_search_fields
 
+        #To vew the returned results in dev mode.
+        #print(results)
         return results
 
     def get_search_field_selections(self, request):
@@ -73,6 +116,7 @@ class DjangoAdminSearchFieldsMixin:
         if request.GET:
             request.GET._mutable = True
             try:
+                print(request.GET.pop("request-fields", None))
                 self._selected_search_fields = request.GET.pop("search-fields", None)
             except KeyError:
                 self._selected_search_fields = None
